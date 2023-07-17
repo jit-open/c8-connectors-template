@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>c8-connectors-template</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+
+    <name>connector-template</name>
+    <description>Template for a Connector</description>
+    <groupId>io.camunda.connector</groupId>
+
+    <packaging>jar</packaging>
+    <version>0.1.5</version>
+    <artifactId>connector-template</artifactId>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- connector SDK version -->
+        <version.connector-core>0.10.0</version.connector-core>
+
+        <version.slf4j>2.0.7</version.slf4j>
+
+    </properties>
+
+    <dependencies>
+
+        <!-- connector dependencies -->
+        <dependency>
+            <groupId>io.camunda.connector</groupId>
+            <artifactId>connector-core</artifactId>
+            <version>${version.connector-core}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${version.slf4j}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.sys1yagi.mastodon4j</groupId>
+            <artifactId>mastodon4j</artifactId>
+            <version>1.7.0</version>
+        </dependency>
+
+    </dependencies>
+
+    <repositories>
+
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+        <repository>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>connectors</id>
+            <name>Connectors Repository</name>
+            <url>https://artifacts.camunda.com/artifactory/connectors/</url>
+        </repository>
+
+    </repositories>
+
+</project>

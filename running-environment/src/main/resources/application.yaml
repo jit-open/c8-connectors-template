@@ -1,0 +1,15 @@
+# https://github.com/camunda-community-hub/spring-zeebe#configuring-camunda-platform-8-saas-connection
+# https://github.com/camunda-community-hub/spring-zeebe#additional-configuration-options
+
+zeebe.client:
+  #broker.gatewayAddress: 127.0.0.1:26500
+  #security.plaintext: true
+  cloud:
+    region: bru-2
+    clusterId: 0f220a90-5753-4a66-8484-42f820782edc
+    clientId: RrEGoDkP_IakJlLXj~eB9XIkFvzQ6Ac-
+    clientSecret: uePhJBUj0eaJ50yqusrvNd4uEmsdsbrLyDJu_lyyvYZw9Eiz-GlwZcyz6qT_zyCL
+zeebe:
+  client:
+    job:
+      timeout: 30000
