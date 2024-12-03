@@ -6,9 +6,9 @@ zeebe.client:
   #security.plaintext: true
   cloud:
     region: bru-2
-    clusterId: 0f220a90-5753-4a66-8484-42f820782edc
+    clusterId: <replace-with-your-value>
     clientId: RrEGoDkP_IakJlLXj~eB9XIkFvzQ6Ac-
-    clientSecret: uePhJBUj0eaJ50yqusrvNd4uEmsdsbrLyDJu_lyyvYZw9Eiz-GlwZcyz6qT_zyCL
+    clientSecret: <replace-with-your-value>
 zeebe:
   client:
     job:
